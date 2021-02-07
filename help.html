@@ -1,0 +1,14 @@
+composer require laravel/passport 
+
+php artisan migrate
+
+php artisan passport:install 
+
+
+(User->models (use Laravel\Passport\HasApiTokens))
+
+
+(provider->AuthProvider (Laravel\Passport\Passport;))
+
+
+(config->file(driver->passport))
